@@ -1,0 +1,419 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+	color: #222;
+	background-color: #fff;
+}
+a {
+	text-decoration: none;
+	color: #666;
+}
+a:hover {
+	color: #c81623;
+}
+i {
+	font-style: normal;
+	font-family: Consolas;
+}
+ul {
+	list-style: none;
+}
+img {
+	border: 0;
+}
+input, button, select, textarea {
+	outline: 0;
+}
+.clear:after {
+	content: "200B";
+	width: 0;
+	height: 0;
+	clear: both;
+	display: block;
+	font-size: 0;
+}
+/*header*/
+.header {
+	border-bottom: 2px solid #b1191a;
+}
+.inner {
+	width: 1210px;
+	margin: 0 auto;
+}
+.h_top .to_bj {
+	float: left;
+	color: #666;
+	margin-left: 10px;
+	font-size: 12px;
+	line-height: 30px;
+}
+.h_top {
+	background: #f1f1f1;
+}
+.h_top ul {
+	float: right;
+}
+.h_top ul li {
+	line-height: 30px;
+	float: left;
+}
+.h_top ul li a {
+	font-size: 12px;
+	color: #666;
+	padding: 0 10px;
+	display: inline-block;
+}
+.h_top ul li a.active {
+	color: #c81623;
+}
+.h_top i {
+	font-style: normal;
+	margin-left: 9px;
+	font-size: 12px;
+	font-family: Consolas;
+	height: 6px;
+	line-height: 0px;
+	width: 15px;
+	overflow: hidden;
+	display: inline-block;
+	transition: all 0.3s;
+	transform: rotate(0deg);
+}
+.h_top ul li a:hover {
+	color: #c81623;
+	background: #fff;
+}
+.h_top a:hover i {
+	transform: rotate(180deg) translateY(3px);
+	transform-origin: 40%;
+	color: #666;
+}
+.h_top ul li.libg a span {
+	width: 15px;
+	height: 20px;
+	background: url(../images/jd2015img.png) no-repeat;
+	margin: 5px 3px 0 0;
+	display: inline-block;
+	float: left;
+}
+.h_top ul li.libg a:hover span {
+	background: url(../images/jd2015img.png) no-repeat 0 -25px;
+}
+.h_top .line {
+	background: #ddd;
+	width: 1px;
+	height: 12px;
+	margin-top: 10px;
+}
+.h_mid {
+	width: 1210px;
+	margin: 0 auto;
+}
+.h_mid .logo {
+	float: left;
+	margin-top: 20px;
+}
+.h_mid .logo img {
+	float: left;
+}
+.h_mid form {
+	padding: 25px 0 0 92px;
+	float: left;
+	width: 538px;
+	height: 62px;
+	overflow: hidden;
+}
+.h_mid form input[type="text"] {
+	width: 454px;
+	line-height: 32px;
+	background-color: #fff;
+	border: 2px solid #b61d1d;
+	font-size: 14px;
+	color: #666;
+	padding: 0 4px;
+	box-sizing: border-box;
+	float: left;
+	height: 36px;
+}
+.h_mid form input[type="submit"] {
+	width: 80px;
+	height: 36px;
+	border: 0;
+	line-height: 36px;
+	background-color: #b61d1d;
+	font-size: 15px;
+	color: #fff;
+	padding: 0 5px;
+	float: left;
+	cursor: pointer;
+}
+.h_mid .link a {
+	float: left;
+	color: #666;
+	font-size: 12px;
+	font-family: "宋体";
+	height: 28px;
+	line-height: 28px;
+	margin-right: 11px;
+}
+.h_mid a.active {
+	color: #c81623;
+}
+.h_mid .link a:hover {
+	color: #c81623;
+}
+.h_mid .buycar {
+	background: #f9f9f9 url(../images/jd2015img.png) no-repeat 19px -49px;
+	width: 95px;
+	height: 34px;
+	line-height: 34px;
+	border: 1px solid #dfdfdf;
+	color: #666;
+	float: right;
+	font-size: 12px;
+	font-family: "宋体";
+	margin: 25px 65px 0 0;
+	padding-left: 44px;
+	position: relative;
+}
+.h_mid .buycar a {
+	font-size: 12px;
+	font-family: "宋体";
+}
+.h_mid .buycar i {
+	float: right;
+	margin-right: 11px;
+	font-size: 14px;
+}
+.h_mid .buycar span.zero {
+	color: #fff;
+	background-color: #c81623;
+	border-radius: 6px 6px 6px 0;
+	height: 14px;
+	line-height: 14px;
+	position: absolute;
+	left: 104px;
+	top: -3px;
+	padding: 0 4px;
+	font-size: 12px;
+	max-width: 100px;
+}
+.h_botttom {
+	width: 1210px;
+	margin: 0 auto;
+	padding-top: 11px;
+}
+.h_botttom .all {
+	float: left;
+    height: 44px;
+    width: 210px;
+    line-height: 44px;
+    color: #fff;
+    background: #b1191a;
+    font-size: 16px;
+    text-align: left;
+    text-indent: 0.5em;
+}
+.h_botttom .ul {
+	float: left;
+}
+.h_botttom ul li {
+	float: left;
+	height: 44px;
+	line-height: 44px;
+	padding: 0 20px;
+}
+.h_botttom ul li a {
+	display: block;
+	font-size: 16px;
+}
+.f4 {
+	margin: 20px 0 14px 0;
+	height: 94px;
+	background-color: #f5f5f5;
+}
+.f4 ul {
+	padding-left: 11px;
+}
+.f4 li {
+	float: left;
+	width: 220px;
+	height: 54px;
+	margin: 20px 0;
+	padding-right: 80px;
+	background: url(../images/nva_bg.png) no-repeat left -130px;
+}
+.f4 .two {
+	background-position: left -196px;
+	padding-right: 84px;
+}
+.f4 .three {
+	background-position: left -258px;
+	padding-right: 85px;
+}
+.f4 .four {
+	background-position: left -322px;
+	padding-right: 70px;
+}
+.footer {
+	height: 385px;
+}
+.footer .top {
+	height: 188px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.footer .top dl {
+	float: left;
+	width: 199px;
+}
+.footer .top dl dt {
+	height: 36px;
+	font: 16px/36px "Microsoft YaHei";
+}
+.footer .top dl dd {
+	height: 20px;
+	font: 12px/20px "宋体";
+}
+.footer .top .last {
+	width: 164px;
+}
+.footer .top .right {
+	width: 185px;
+	padding: 0 45px 0 20px;
+	background: url(../images/20130330B_1.png) no-repeat left -132px;
+	height: 171px;
+}
+.footer .top .right dd {
+	height: auto;
+}
+.footer .top .right .more a {
+	float: right;
+	position: relative;
+}
+.footer .top .right .more a i {
+	font-size: 12px;
+	font-family: consolas;
+	position: absolute;
+	top: 0px;
+	right: -10px;
+}
+.footer .bot {
+	text-align: center;
+	padding-top: 11px;
+}
+.footer .bot ul {
+	display: inline-block;
+	height: 20px;
+}
+.footer .bot li {
+	float: left;
+	font-size: 12px;
+	font-family: "宋体";
+	height: 20px;
+	line-height: 20px;
+}
+.footer .bot li span {
+	padding: 0 7px 0 8px;
+	color: #9b669b;
+}
+.footer .bot .first {
+	height: 36px;
+}
+.footer .bot .first li {
+	height: 36px;
+	line-height: 36px;
+	font-size: 12px;
+}
+.footer .bot .mid {
+	height: 16px;
+}
+.footer .bot .mid li {
+	height: 16px;
+	line-height: 16px;
+}
+.footer .bot .jd {
+	display: block;
+}
+.footer .bot .jd li {
+	float: none;
+}
+.footer .bot .last {
+	padding: 9px 0px;
+	height: 32px;
+}
+.footer .bot .last li {
+	padding: 0 7px 0 6px;
+}
+.footer a:hover {
+	color: #c81623;
+}
+.subnav .right {
+	width: 6px;
+	height: 100%;
+	position: fixed;
+	right: 0px;
+	top: 0;
+	background: #7a6e6e;
+}
+.subnav .right ul {
+	margin-top: 413px;
+	margin-left: -29px;
+}
+.subnav .right ul li {
+	width: 35px;
+	height: 35px;
+	border-radius: 2px 0 0 2px;
+	background: #7a6e6e url(../images/toolbars.png) no-repeat -87px -175px;
+	margin-top: 1px;
+	position: relative;
+}
+.subnav .right ul .icon2 {
+	background-position: -49px 0px;
+}
+.subnav .right ul .icon3 {
+	background-position: -49px -50px;
+}
+.subnav .right ul .icon4 {
+	background-position: -49px -100px;
+}
+.subnav .right ul .icon5 {
+	background-position: -189px -150px;
+}
+.subnav .right ul .icon6 {
+	background-position: -49px -150px;
+}
+.subnav .right ul .icon7 {
+	background-position: -49px -250px;
+	margin-top: 248px;
+}
+.subnav .right ul .icon8 {
+	background-position: -49px -300px;
+}
+.subnav .right ul li a {
+	background: #c81623;
+	display: block;
+	width: 62px;
+	height: 35px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 2px 0 0 2px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -2;
+	transition: all 0.5s;
+}
+.subnav .right ul li:hover {
+	background-color: #c81623;
+}
+.subnav .right ul li:hover a {
+	transform: translateX(-60px);
+}

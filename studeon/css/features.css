@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+.main{height:1067px;width:1140px;margin:0 auto;text-align:center;}
+.main .top h3{line-height:42px;font-size:23px;}
+.main .top{margin-top:47px;}
+.main .icon{height:316px;margin-top:20px;}
+.main .icon .icon-in{height:276px;}
+.main .icon .icon-inner{float:left;height:128px;width:360px;background: url(../images/ser-bg.png) no-repeat;margin:20px 20px 0 0;}
+.main .icon .icon-inner .pic{width:67px;height:123px;float:left;}
+.main .icon .icon-inner .pic1{background:#ed5844 url(../images/s-icons.png) no-repeat 18px 43px;}
+.main .icon .icon-inner .pic2{background:#ed5844 url(../images/s-icons.png) no-repeat -66px 43px;}
+.main .icon .icon-inner .pic3{background:#ed5844 url(../images/s-icons.png) no-repeat -144px 43px;}
+.main .icon .icon-inner .pic4{background:#ed5844 url(../images/s-icons.png) no-repeat 22px -74px;}
+.main .icon .icon-inner .pic5{background:#ed5844 url(../images/s-icons.png) no-repeat -64px -69px;}
+.main .icon .icon-inner .pic6{background:#ed5844 url(../images/s-icons.png) no-repeat -142px -69px;}
+.icon-inner .text{float:left;height:98px;width:263px;margin:11px 0 0 22px;}
+.icon-inner .text h3{font-size:18px;color:#555152;line-height:38px;}
+.icon-inner .text p{font-size:13px;color:#9e9e9c;line-height:20px;}
+.main .bot{width:1140px;height:601px;}
+.main .bot h3{line-height:109px;font-size:22px;}
+.main .bot-t{width:334px;height:236px;padding:0 23px;float:left;}
+.main .bot-t .pic{width:100px;height:100px;background: url(../images/img-sprite.png) no-repeat 0 0;margin:0 auto;}
+.main .bot-t h4{line-height:42px;font-size:18px;color:#323232;}
+.main .bot-t p{line-height:23px;font-size:12px;color:#525252;}
+.main .bot1{width:380px;padding:0;}
+.main .bot-t .pic1{width:380px;height:236px;}
+.main .bot-t .pic1 img{width:100%;height:100%;}
+.main .bot-t .pic2{background:url(../images/img-sprite.png) no-repeat -101px 0;}
+.main .bot-t .pic3{background:url(../images/img-sprite.png) no-repeat -200px 0;}
+.main .bot-t .pic4{background:url(../images/img-sprite.png) no-repeat -302px 0;}
+.main .bot-t .pic5 {background:url(../images/img-sprite.png) no-repeat -401px 0;}

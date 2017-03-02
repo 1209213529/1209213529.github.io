@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0;padding:0;}
+ul{list-style:none;}
+i{font-style:normal;}
+span{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;}
+.clear:after{content:'200B';width:0;height:0;display:block;font-size:0;clear:both}
+body{font-family:arial,'微软雅黑';color:#656565}
+a{text-decoration:none;color:#372e33}
+.inner{margin:0 auto;width:1210px;}
+header{background:#f1f1f1;z-index:-2;position:relative;}
+header ul{display:inline-block;padding-left:221px;}
+header ul li{float:left;line-height:30px;height:30px;padding:0 10px;text-align:center;position:relative;}
+header ul li span{height:35px;width:76px;position:absolute;left:3px;top:0;background:#fff;border-left:1px #e0e0e0 solid;border-right:1px #e0e0e0 solid;border-top:2px solid red;z-index:-1;display:none;}
+.s_block{display:block}
+.h_mid .buycar {background: #f9f9f9 url(images/jd2015img.png) no-repeat 19px -49px;width: 95px;height: 34px;line-height: 34px; border: 1px solid #dfdfdf; color: #666;  float: right;  font-size: 12px;  font-family: "宋体"; margin: 25px 65px 0 0;  padding-left: 44px;  position: relative;  }
+.h_mid .buycar a {  font-size: 12px;  font-family: "宋体";  }
+.h_mid .buycar i {  float: right;  margin-right: 11px;  font-size: 14px;  }
+.h_mid .buycar span.zero {  color: #fff;  background-color: #c81623;  border-radius: 6px 6px 6px 0;  height: 14px;  line-height: 14px;  position: absolute;  left: 104px;  top: -3px;  padding: 0 4px;  font-size: 12px;  max-width: 100px;  }
+.h_mid {width: 1210px;margin: 0 auto;}
+.h_mid .logo {float: left;margin-top: 20px;}
+.h_mid .logo img {float: left;}
+.h_mid .logo a{display: inline-block;width:100%;}
+.h_mid form {padding: 25px 0 0 92px;float: left;width: 538px;height: 62px;overflow: hidden;}
+.h_mid form input[type="text"] {width: 454px;line-height: 32px;background-color: #fff;border: 2px solid #b61d1d;font-size: 14px;color: #666;padding: 0 4px;box-sizing: border-box;float: left;height: 36px;}
+.h_mid form input[type="submit"] {width: 80px;height: 36px;border: 0;line-height: 36px;	background-color: #b61d1d;font-size: 15px;color: #fff;padding: 0 5px;float: left;cursor: pointer;}
+.h_mid .link a {float: left;color: #666;font-size: 12px;font-family: "宋体";height: 28px;line-height: 28px;margin-right: 11px;}
+.h_mid a.active {color: #c81623;}
+.h_mid .link a:hover {color: #c81623;}
+.h_bottom {width: 1210px;	margin: 0 auto;padding-top: 11px;}
+.h_bottom .all {float: left; height: 44px; width: 201px;line-height: 44px; color: #fff;background: #b1191a; font-size: 16px;text-align: left;padding-left:9px;}
+.h_bottom .ul {float: left;}
+.h_bottom ul li {float: left;height: 44px;	line-height: 44px;padding: 0 20px;}
+.h_bottom ul li a {display: block;font-size: 16px;}
+.main{border-top:2px solid #b2191b;background:#f2f2f2;}
+.main .m_dl i{position:absolute;right:-14px;top:1px;}
+.main .m_dl{height:45px;line-height:45px;}
+.main .m_dl dt{float:left;font-weight:bolder;font-size:18px;color:#626665;position:relative;}
+.main .m_dl dd{float:left;padding-left:20px;position:relative;}
+.in_main{height:489px;border-bottom:1px solid #f1f1f1;background:#fff}
+.in_main .left{width:378px;float:left;position:relative;}
+.in_main .left #div1{width:350px;height:350px;position:relative;}
+.in_main .left #div1 span{height:100px;width:100px;position:absolute;opacity:.5;background:#CF5555;left:0;top:0;display:none;cursor:none}
+.in_main .left #div2{height:350px;width:350px;position:absolute;left:350px;top:0;z-index:2;overflow:hidden;display:none;}
+.in_main .left #div1 img{width:100%}
+.in_main .left #div2 img{position:absolute;}
+.in_main .left .l_bot{position:absolute;bottom:-62px;left:10px;width:310px}
+.in_main .left .l_bot p{float:left;}
+.in_main .left .l_bot span{float:right;display:inline-block;padding-right:10px;}
+
+
+.in_main .left .l_mid{position:relative;}
+.in_main .left .l_mid a{position:absolute;}
+.in_main .left .l_mid ul{padding:0 36px;}
+.in_main .left .l_mid li{float:left;height:50px;width:50px;margin-right:8px;border:1px solid #fff;}
+.in_main .left .l_mid img{width:100%}
+
+.in_main .left .l_top{height:360px;width:360px}
+.in_main .mid{padding-top:14px;width:589px;float:left;position:relative;}
+.in_main .mid h3{line-height:25px;text-intend:1em}
+.in_main .mid .out{line-height:18px;color:#c3455a;padding-top:5px;margin-bottom:11px;}
+.in_main .mid .price{background:#f7f7f7;padding-top:9px;padding-bottom:6px;}
+.in_main .mid .in_price{height:35px;line-height:35px;width:500px;border-right:1px solid #e5e5e5;float:left;}
+.in_main .mid .in_price span{font-size:20px;color:#ee2f41;font-weight:bolder;}
+.in_main .mid .in_right{width:87px;float:right;text-align:center;font-size:14px;}
+.in_main .mid .in_right i{font-style:normal;color:#2c495b;font-size:18px;letter-spacing:1px;}
+.in_main .mid .send{line-height:34px;border-bottom:1px dashed;padding-left:12px}
+.in_main .mid .send p select{margin-right:5px;}
+.in_main .mid .send p i{font-weight:bolder;}
+.in_main .mid .in_bot dl{padding:17px 12px 0;}
+.in_main .mid .in_bot dt{font-weight:normal;font-size:16px;float:left;}
+.in_main .mid .in_bot dd{padding:6px;border:1px solid #cbcbcb;float:left;margin-right:8px;cursor:pointer;}
+.in_main .mid .buy{position:absolute;bottom:-65px;left:12px}
+.in_main .mid .buy .num{display:inline-block;height:34px;width:33px;border:1px solid  #c8cecc;line-height:34px;text-align:center;position:relative;margin-right:30px;}
+.in_main .mid .buy .plus{text-align:center;  cursor:pointer;height:17px;width:15px;background:#fdf9fa;border-top:1px solid #cdcfce;border-right:1px solid #cdcfce;border-bottom:1px solid #cdcfce;position:absolute;right:153px;top:1px;line-height:17px}
+.in_main .mid .buy .deplus{text-align:center;cursor:pointer;height:16px;width:15px;background:#fdf9fa;border-right:1px solid #cdcfce;border-bottom:1px solid #cdcfce;position:absolute;right:153px;top:20px;line-height:16px}
+.in_main .mid .buy_car{display:inline-block;background:#df4742;line-height:36px; height:36px;width:115px;font-size:20px;color:#fff;padding:0 10px;border-radius:4px;}
+.in_main .mid .tip{position:absolute;position:absolute;bottom:-105px;left:12px}
+.in_main .right{padding-top:20px;float:right;width:204px;margin-right:21px;position:relative;}
+.in_main .right .pic{height:70px;width:204px;border-top:1px solid #eeeeee;border-bottom:1px solid #eeeeee;text-align:center;padding-top:10px;}
+.in_main .right h6{line-height:50px;padding:0 12px;}
+.in_main .right .jingd{float:right;background:#d1423a;padding:4px;line-height:16px;margin-top:12px;color:#fff;font-weight:normal;border-radius:3px;}
+.in_main .right li{height:28px;width:90px;border:1px solid #cccdc5;float:left;margin-right:7px;margin-bottom:12px;text-align:center; }
+.in_main .right .bot{position:absolute;top:240px;left:10px;}
+.bottom{border-left:1px solid #d4d4d4;border-right:1px solid #d4d4d4;border-bottom:1px solid #d4d4d4;height:264px;width:1208px;margin:0 auto;margin-top:10px;}
+.bottom .top{display:inline-block;background:#f7f7f7;width:1208px;border-top:2px solid #99989e;z-index:-2;position:relative;}
+.bottom .top li{float:left;line-height:30px;height:30px;padding:0 10px;text-align:center;position:relative;}
+.bottom .top .ac{color:#df3951}
+.bottom .top li span{height:30px;width:76px;position:absolute;left:3px;top:0;background:#fff;border-left:1px #e0e0e0 solid;border-right:1px #e0e0e0 solid;border-top:2px solid red;z-index:-1;display:none;}
+.bottom .top li .s_block{display:block}
+</style>
+</head>
+<script src="js/jquery-3.1.0.js"></script>
+<script src="js/angular.js"></script>
+<script src="js/angular-route.js"></script>
+<script>
+    var myapp = angular.module('myapp',['ngRoute'])
+            .config(function ($routeProvider) {
+                $routeProvider
+                        .when('/',{templateUrl:'pages/products.html',controller:'productsCtrl'})
+                        .when('/products',{templateUrl:'pages/products.html',controller:'productsCtrl'})
+                        .when('/car',{templateUrl:'pages/car.html',controller:'cartCtrl'})
+                        .otherwise({templateUrl:'pages/products.html',controller:'productsCtrl'})
+            })
+            .factory('carService',function () {
+                var cart = []
+                return{
+                    add:function (product) {
+                        
+                        for(var i=0;i<cart.length;i++){
+                            var item = cart[i]
+                            product.quantity++
+
+                            if(product.name == item.product.name){
+                                item.number++
+
+                                return
+                            }
+                        }
+
+                        cart.push({product:product,number:1})
+
+                    },
+
+                    findAll:function () {
+                        return cart;
+                    },
+
+                    remove:function (name) {
+                        for(var i=0;i<cart.length;i++){
+                            var item = cart[i]
+                            if(name == item.product.name){
+                                cart.splice(i,1)
+                                return
+                            }
+
+                        }
+                    }
+                    
+                    
+                }
+                
+                
+            })
+            
+            .controller('productsCtrl',function ($scope,$http,carService) {
+                var url = 'products.json'
+                $http.get(url).success(function (data) {
+                    $scope.products = data
+                })
+
+                //选择购买数量
+                $scope.countN =1;
+                $scope.plus = function () {
+                    $scope.countN++
+                }
+                $scope.dplus = function () {
+                    $scope.countN>0? $scope.countN--: $scope.countN==0
+                }
+
+                //加入购物车-按钮
+                $scope.add = function (product) {
+                    if($scope.countN>1){
+                        product.quantity+=$scope.countN-1
+                    }
+                        carService.add(product)
+
+                }
+
+                //选择要购买的商品
+                var def =[{color:"黑色",imgsrc:"2-328x300.jpg",name:"京东金条999 100g 中国黄金出品",price:21111,quantity:1}]
+                $scope.def = def
+                $scope.color = '黑色'
+                $scope.colorPrice = 11111
+                $scope.dis = function (product) {
+                     def.length = 0
+                     def.push({color:product.color,imgsrc:product.imgsrc,name:product.name,price:product.price,quantity:product.quantity})
+                     $scope.color =  def[0].color
+                    $scope.colorPrice = def[0].price
+                }
+            })
+            .controller('cartCtrl',function ($scope,carService) {
+                //拿到购物筐中所有商品
+                $scope.cart = carService.findAll()
+
+
+                //统计购买总数量
+                $scope.count = function () {
+                    var total = 0
+
+                    angular.forEach($scope.cart,function (item) {
+
+                        total +=item.product.quantity
+                    })
+
+                    return total;
+                }
+
+                //删除商品
+                $scope.del = function (name) {
+                    carService.remove(name)
+                }
+
+
+                //统计总价格
+                $scope.countPrice = function () {
+                    var total = 0
+                    angular.forEach($scope.cart,function (item) {
+                        total += item.product.quantity*item.product.price
+                    })
+                    return total;
+                }
+
+            })
+
+
+</script>
+<body ng-app="myapp">
+<header>
+<div class="inner">
+	<ul>
+		<li><a href="javascript:">商品介绍</a><span class="s_block"></span></li>
+		<li><a href="javascript:">规格参数</a><span></span></li>
+		<li><a href="javascript:">包装清单</a><span></span></li>
+		<li><a href="javascript:">商品评价</a><span></span></li>
+		<li><a href="javascript:">售后保障</a><span></span></li>
+	</ul>
+</div>
+
+</header>
+ <div class="h_mid clear">
+    <div class="logo clear"><a href="#/"><img src="images/logo-201305.png" ></a></div>
+    <form>
+      <input type="text" value="卡通手机壳">
+      <input type="submit" value="搜索">
+      <div class="link"> <a class="active" href="#">七夕礼品</a> <a href="#">消暑神器</a><a href="#">农用物资</a> <a href="#">鲜花99元</a> <a href="#">电影京券</a> <a href="#">防晒喷雾</a></div>
+    </form>
+     <div class="buycar" ng-controller="cartCtrl"><a href="#/car">我的购物车</a><i>></i><span class="zero">{{count()}}</span></div>
+
+ </div>
+   
+  <div class="h_bottom clear">
+    <div class="all">全部商品分类</div>
+    <ul>
+      <li><a href="#">首页</a></li>
+      <li><a href="#">服装城</a></li>
+      <li><a href="#">美妆馆</a></li>
+      <li><a href="#">京东超市</a></li>
+      <li><a href="#">生鲜</a></li>
+      <li><a href="#">全球购</a></li>
+      <li><a href="#">闪购</a></li>
+      <li><a href="#">团购</a></li>
+      <li><a href="#">拍卖</a></li>
+      <li><a href="#">金融</a></li>
+    </ul>
+  </div>
+
+  <div class="main clear">
+    <div ng-view></div>
+ </div>
+
+
+  <div class="bottom">
+  	<div class="inner">
+    	<ul class="top">
+        	<li>推荐配件<span></span></li>
+            <li class="ac">人气单品<span class="s_block"></span></li>
+        </ul>
+        <img src="images/$2F%60ZSC1CD%7BZZ9W_LK~VAH8.png">
+    </div>
+  </div>
+</body>
+</html>

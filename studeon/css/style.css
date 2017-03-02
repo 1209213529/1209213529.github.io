@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,input,option,textarea,p{margin:0;padding:0;}
+ul{list-style:none;}
+body{font-family:arial,"微软雅黑";}
+img,input{border:none;}
+a{text-decoration:none;}
+.header{height:83px;box-shadow:0 0 7px 0 rgba(0,0,0,0.5);position:relative;z-index:2;}
+.header .h-inner{width:1140px;margin:0 auto;}
+.header .h-inner .logo{width:153px;height:39px;float:left;padding:15px 152px 0 0;}
+.header .h-inner  .nav li{float:left;}
+.header .h-inner .nav li a{display:block;line-height:80px;height:80px;padding:0 24px;color:#485341;border-top:3px solid transparent;}
+.header .h-inner .nav li .active{background:url(../images/index_03.jpg) repeat-x;border-top:3px solid #ee5742;color:#e97609;}
+.header .h-inner .nav li a:hover{background:url(../images/index_03.jpg) repeat-x;border-top:3px solid #ee5742;color:#e97609;}
+.header .h-inner .nav ul{float:left;}
+.header .h-inner .icon ul{float:left;}
+.header .h-inner .icon{float:right;padding-top:29px;}
+.header .h-inner .icon li{float:left;}
+.header .h-inner .icon li a{display:block;float:left;width:23px;height:22px;margin-left:7px;background:url(../images/s-icons.png) no-repeat ;}
+.header .h-inner .icon li .f{background:url(../images/s-icons.png) no-repeat -242px -7px;}
+.header .h-inner .icon li .f:hover{background:url(../images/s-icons.png) no-repeat -242px -46px;}
+.header .h-inner .icon li .tiw{background:url(../images/s-icons.png) no-repeat -268px -7px;}
+.header .h-inner .icon li .tiw:hover{background:url(../images/s-icons.png) no-repeat -268px -46px;}
+.header .h-inner .icon li .wifi{background:url(../images/s-icons.png) no-repeat -294px -7px;}
+.header .h-inner .icon li .wifi:hover{background:url(../images/s-icons.png) no-repeat -294px -46px;}
+.header .h-inner .icon li .v{background:url(../images/s-icons.png) no-repeat -319px -7px;}
+.header .h-inner .icon li .v:hover{background:url(../images/s-icons.png) no-repeat -319px -46px;}
+.header .h-inner .icon li .you{background:url(../images/s-icons.png) no-repeat -344px -7px;}
+.header .h-inner .icon li .you:hover{background:url(../images/s-icons.png) no-repeat -344px -46px;}
+.header .h-inner .icon li .in{background:url(../images/s-icons.png) no-repeat -369px -7px;}
+.header .h-inner .icon li .in:hover{background:url(../images/s-icons.png) no-repeat -369px -46px;}
+
+.footer{height:273px;background-color:#373737;}
+.footer .footer-in{width:1126px;margin:0 auto;padding:12px 0 0 14px;}
+.footer .footer-in .left{width:285px;float:left;}
+.footer .footer-in .left h3{background:url(../images/bot_05.jpg) no-repeat left bottom;}
+.footer-in .left h3{line-height:51px;color:#fff;}
+.footer-in .left p{line-height:23px;margin-top:19px;font-size:13px;color:#9e9da3;}
+.footer-in .left .p2{margin-top:0px;}
+.footer .footer-in .left .box a{background:#222222 no-repeat; display:block;color:#98999e;height:37px;float:left;line-height:37px;margin:0 3px 4px 0;padding:0 10px;font-size:13px;}
+.footer .footer-in .left .black{width:250px;height:185px;margin-top:25px;}
+.footer .footer-in .left3{width:285px;}
+.footer .footer-in .left3 span a{color:#cfcfcf;}
+.footer-in .left3  .bird-in{height:74px;width:240px;background:url(../images/tw.png) no-repeat left 3px;}
+.footer-in .left3  .bird-in h4{font-size:12px;color:#fff;padding-left:31px;line-height:32px;}
+.footer .footer-in .left3 p{line-height:21px;padding-left:31px;}
+.footer .footer-in .bird-in .left3 p2{margin-top:0;}
+.footer .footer-in .last{width:270px;}
+.footer-in .last .feed{margin-top:18px;width:253px;height:146px;padding-left:1px;}
+.footer-in .last .feed .pic{width:81px;height:70px;float:left;margin:0 3px 3px 0;}
+
+.bottom{height:52px;background-color:#232323;position:relative;}
+.bottom .go-top a{display:block;height:22px;width:55px;position:absolute;right:0;bottom:10px;}
+.bottom .bottom-in{width:1140px;margin:0 auto;}
+.bottom .bottom-in .bottom-l{float:left;margin-top:14px;}
+.bottom .bottom-in .bottom-r{float:right;color:#e3e3e3;font-size:14px;margin-top:22px;}
+.bottom .bottom-in .bottom-r span{color:#bb4a38;}
+
+
+
+
+
+
+
+
+

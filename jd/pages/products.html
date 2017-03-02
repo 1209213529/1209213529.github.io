@@ -1,0 +1,123 @@
+<script src="../js/jquery-3.1.0.js"></script>
+<script>
+    $(function () {
+
+        var arr=["images/574fe998Na4b220f411.jpg","images/574fe995N6485e1041.jpg","images/574fe991Nbc69619a1.jpg","images/574fe9a5Nae7516611.jpg","images/574fe9a1Nc63f43f71.jpg"]
+
+
+        $('div.in_main').find('.l_mid').find('li').hover(function (index) {
+            $(this).css('borderColor','#f00')
+            var a=$(this).find('img').attr('src')
+            $('div.in_main').find('#div1').find('img').attr('src',a)
+
+            $('#div2 img').attr('src',arr[$(this).index()-1])
+        },function () {
+            $(this).css('borderColor','#fff')
+        })
+
+
+        var oSp=$('#div1').find('span')
+        $('div.in_main').find('#div1').hover(function () {
+            oSp.show()
+            $('#div2').show()
+        },function () {
+            oSp.hide()
+            $('#div2').hide()
+        }).on('mousemove',function (ev) {
+            var scrollT=document.documentElement.scrollTop || document.body.scrollTop;
+            var l=ev.clientX-$('#div1').offset().left-(oSp.width())/2
+            var t=ev.clientY-$('#div1').offset().top-(oSp.height())/2+scrollT
+            if(l<0)l=0
+            if(t<0)t=0
+            if(l>($('#div1').width()-oSp.width()))l=($('#div1').width()-oSp.width())
+            if(t>($('#div1').height()-oSp.height()))t=($('#div1').height()-oSp.height())
+            oSp.css({'left':l+'px','top':t+'px'})
+            var rateX=l/($('#div1').width()-oSp.width())
+            var rateY=t/($('#div2').height()-oSp.height())
+            var bpX=-($('#div2 img').width()-$('#div2').width())*rateX+'px'
+            var bpY=-($('#div2 img').height()-$('#div2').height())*rateY+'px'
+            $('#div2 img').css({'left':bpX,'top':bpY})
+        })
+        $('div.in_main').find('.mid').find('.in_bot').find('dl dd').on('click',function () {
+            $('div.in_main').find('.mid').find('.in_bot').find('dl dd').each(function () {
+                $(this).css('borderColor','')
+            })
+            $(this).css('borderColor','red')
+        })
+        $('div.in_main').find('.mid').find('.in_bot').find('dl dd').eq(0).css('borderColor','red')
+
+
+
+
+
+    })
+</script>
+<div class="inner">
+    <dl class="m_dl">
+        <dt>母婴<i>></i></dt>
+        <dd>尿裤湿巾<i>></i></dd>
+        <dd>婴儿尿裤<i>></i></dd>
+        <dd>尿裤湿巾<i>></i></dd>
+        <dd>尿裤湿巾</dd>
+    </dl>
+    <div class="in_main">
+        <div class="left">
+            <div id='div1'><img src="images/574fe991Nbc69619a.jpg"><span></span></div>
+            <div id='div2'><img src="images/574fe991Nbc69619a1.jpg"></div>
+            <div class="l_mid">
+                <ul>
+                    <a href='javascript:'><</a>
+                    <li><img src="images/574fe998Na4b220f41.jpg"></li>
+                    <li><img src="images/574fe995N6485e104.jpg"></li>
+                    <li><img src="images/574fe991Nbc69619a.jpg"></li>
+                    <li><img src="images/574fe9a5Nae751661.jpg"></li>
+                    <li><img src="images/574fe9a1Nc63f43f7.jpg"></li>
+                    <a href='javascript:'>></a>
+                </ul>
+            </div>
+            <div class="l_bot"><p>商品编号：695469</p><span>分享</span><span>关注商品</span></div>
+        </div>
+        <div class="mid">
+            <h3>土曼(TOMOON) T-ripple 智能手表（拉丝{{color}}）tomos系统 接打电话 防水计步心率 DIY表盘 遥控拍照</h3>
+            <p class="out">双旦狂欢，全场699-50，999-100，12月20日10:00-12月28日17:00购买并评论就有机会获赠两张电影票，全国通用。</p>
+            <div class='price clear'><div class="in_price">京&nbsp;&nbsp;东&nbsp;&nbsp;价：<span>{{colorPrice|currency:'¥'}}</span>(降价通知)</div><div class="in_right">累计评价<i>162222</i></div></div>
+            <div class="send">
+                <p>配送至：
+                    <select>
+                        <option>北京三环内</option>
+                        <option>东莞</option>
+                        <option>深圳</option>
+                    </select><i>有货</i>，支持99元免运费 | 货到付款</p>
+                <p>服&nbsp;&nbsp;&nbsp;&nbsp;务:由&nbsp;京东&nbsp;发货，并提供售后服务。23:00前完成下单,预计明天送达</p>
+            </div>
+            <div class="in_bot">
+                <dl>
+                    <dt>选择颜色：</dt>
+                    <dd ng-repeat="product in products" ng-click="dis(product)" >{{product.color}}</dd>
+
+                </dl>
+            </div>
+            <div class="buy">
+                <span class="num" id="num">{{countN}}</span><span class="plus" id="plus" ng-click="plus()">+</span><span class="deplus" id="deplus" ng-click="dplus()">-</span>
+                <span class="buy_car" style="cursor:pointer;-moz-user-select:none;-webkit-user-select:none;
+                  -ms-user-select:none;user-select:none;" ng-click="add(def[0])">加入购物车</span>
+            </div>
+            <p class="tip">温馨提示：支持7天无理由退货</p>
+        </div>
+        <div class="right">
+            <div class="pic"><img src="images/570f4e0bN4b769756.jpg"></div>
+            <h6>土曼自营店铺<p class="jingd">京东自营</p></h6>
+            <ul>
+                <li>联系供应商</li>
+                <li>咨询JIMI</li>
+                <li>进店逛逛</li>
+                <li>关注店铺</li>
+            </ul>
+            <div class="bot">
+                <p>服务支持：</p>
+                <a href="javascript:">夜间配</a>
+                <a href="javascript:">自提</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+[
+  {"color":"黑色","imgsrc":"2-328x300.jpg","name":"京东金条999 100g 中国黄金出品","price":11111,"quantity":1},
+  {"color":"白色","imgsrc":"2-328x300.jpg","name":"京东金条888 90g 中国黄金出品","price":22222,"quantity":1},
+  {"color":"红色","imgsrc":"2-328x300.jpg","name":"京东金条777 80g 中国黄金出品","price":33333,"quantity":1},
+  {"color":"蓝色","imgsrc":"2-328x300.jpg","name":"京东金条666 70g 中国黄金出品","price":44444,"quantity":1},
+  {"color":"绿色","imgsrc":"2-328x300.jpg","name":"京东金条555 60g 中国黄金出品","price":55555,"quantity":1},
+  {"color":"灰色","imgsrc":"2-328x300.jpg","name":"京东金条444 50g 中国黄金出品","price":66666,"quantity":1},
+  {"color":"黄色","imgsrc":"2-328x300.jpg","name":"京东金条333 40g 中国黄金出品","price":77777,"quantity":1},
+  {"color":"紫色","imgsrc":"2-328x300.jpg","name":"京东金条222 30g 中国黄金出品","price":88888,"quantity":1},
+  {"color":"粉色","imgsrc":"2-328x300.jpg","name":"京东金条111 20g 中国黄金出品","price":99999,"quantity":1}
+]

@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width:1200px){
+			footer .inner{width:100%;}
+			footer .inner .one-f,footer .inner .two-f,footer .inner .three-f,footer .inner .four-f{width:25%;font-size:100%;}
+			.two .inner{max-width:940px;width:100%;margin:0 auto;}
+			.two .inner .left,.two .inner .right,.two .inner .mid{width:30%;}
+			.three .inner{width:100%;max-width:940px;}
+			.three .inner .box .pic{width:30%;margin:0 3% 3% 0;}
+			footer .inner .four-f ul{width:100%;}
+	}
+
+
+
+@media screen and (max-width:960px){
+			header nav{display:none;}
+			header  .home span{display:block;}
+			.one .inner .icon li{float:none;width:100%;}
+			.two .inner{max-width:760px;}
+			.two .inner p{padding-left:60px;}
+			div{font-size:100%;}
+			.two .inner .mid{margin:0 1% 0 4%;}
+			.three .inner{max-width:760px;}
+			.one .inner .pic{width:80%;}
+
+
+	}
+@media screen and (max-width:760px){
+	
+			.one .inner p{width:30%;margin:0 auto;width:40%;font-size:100%;}
+			.two .inner{max-width:440px;}
+			.two .inner .left,.two .inner .right,.two .inner .mid{width:100%;}
+			.three .inner .box .pic{width:40%;}
+			.three .inner .box{padding:0 10%;width:100%;}
+}

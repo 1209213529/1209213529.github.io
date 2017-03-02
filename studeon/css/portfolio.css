@@ -1,0 +1,15 @@
+ @charset "utf-8";
+/* CSS Document */
+
+.main{width:1140px;margin:0 auto;text-align:center;margin-bottom:56px;}
+.main h3{line-height:50px;font-size:30px;height:50px;margin-top:80px;}
+.main ul{display:inline-block;height:65px;}
+.main li{float:left;line-height:65px;font-size:15px;padding:0 20px;font-weight:bold;}
+.main li a{color:#514F4F;}
+.main li a:hover{color:#e9270a;}
+.main .red{color:#e9270a;}
+.main .main-in{height:546px;width:1140px;margin:0 auto;}
+.main .main-in .pic{height:182px;width:285px;float:left;position:relative;}
+.main .main-in .pic img{width:100%;height:100%;}
+.main .main-in .pic a{display:block;width:100%;height:100%;background-color:rgba(0,0,0,0.5);display:none;position:absolute;left:0;top:0;line-height:182px;color:#81C6DF;}
+.main .pic:hover a{display:block;}

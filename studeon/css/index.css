@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+.banner{height:520px;background:url(../images/bg.jpg) no-repeat;}
+.banner-in{width:1140px;margin:0 auto;}
+.banner-in .banner-l{float:left;width:490px;margin-left:15px;}
+.banner-in .banner-t{height:254px;margin-top:98px;}
+.banner-in .banner-t h2{background-color:#ed5843;height:83px;width:316px;font-size:60px;color:#fff;line-height:83px;padding-left:8px;}
+.banner-in .banner-t .mid{margin:1px 0;}
+.banner-in .banner-b{height:27px;margin-top:46px;}
+.banner-b .btn{float:left;margin-right:8px;height:27px;width:51px;background-color:#fff;}
+.banner-b .btn a{display:block;height:25px;width:49px;}
+.banner-b .btn a:hover{background-color:#ed5844;margin:1px 1px;}
+.banner-r img{width:635px;height:383px;margin-top:70px;}
+.main{width:1140px;margin:0 auto;}
+.main .icon{height:316px;padding:50px 0;border-bottom:double 3px #dddddd;}
+.main .icon .icon-in{height:276px;}
+.main .icon .icon-inner{float:left;height:128px;width:360px;background: url(../images/ser-bg.png) no-repeat;margin:20px 20px 0 0;}
+.main .icon .icon-inner .pic{width:67px;height:123px;float:left;}
+.main .icon .icon-inner .pic1{background:#ed5844 url(../images/s-icons.png) no-repeat 18px 43px;}
+.main .icon .icon-inner .pic2{background:#ed5844 url(../images/s-icons.png) no-repeat -66px 43px;}
+.main .icon .icon-inner .pic3{background:#ed5844 url(../images/s-icons.png) no-repeat -144px 43px;}
+.main .icon .icon-inner .pic4{background:#ed5844 url(../images/s-icons.png) no-repeat 22px -74px;}
+.main .icon .icon-inner .pic5{background:#ed5844 url(../images/s-icons.png) no-repeat -64px -69px;}
+.main .icon .icon-inner .pic6{background:#ed5844 url(../images/s-icons.png) no-repeat -142px -69px;}
+
+.icon-inner .text{float:left;height:98px;width:263px;margin:11px 0 0 22px;}
+.icon-inner .text h3{font-size:18px;color:#555152;line-height:38px;}
+.icon-inner .text p{font-size:13px;color:#9e9e9c;line-height:20px;}
+.main .buy{margin-top:56px;height:244px;border-bottom:double 3px #dddddd;}
+.main .buy .buy-in,.main .mail .mail-in{height:130px;border:1px solid #dedede;border-left:5px #ed5746 solid;background-color:#eeeeee;}
+.buy-in .left{margin:35px 0 0 36px;width:906px;float:left;}
+.buy-in .left h3{line-height:30px;font-size:16px;color:#363636;}
+.buy-in .left p{line-height:30px;font-size:12px;color:#9e9e9e;}
+.main .buy .buy-in .btn{float:left;height:57px;width:155px;text-align:center;margin-top:39px;background:url(../images/windows.png) no-repeat 17px center #ec5743;box-shadow:0 0 20px 0 rgba(0,0,0,0.5) inset;border-radius:4px;}
+.main .buy .buy-in .btn .buy-now{line-height:57px;font-weight:normal;padding-left:38px;color:#fff;font-size:16px;}
+.main .por{border-bottom:double 3px #dddddd;height:575px;padding-top:49px;position:relative;}
+.main .por .pic{height:470px;}
+.main .por .pic .icon1{width:93px;height:27px;background-color:#ed5844;color:#fff;position:absolute;left:14px;bottom:146px;font-size:12px;line-height:27px;padding-left:18px;font-weight:bold;}
+.main .por .pic .icon2 a{width:27px;height:27px;position:absolute;right:43px;bottom:145px;background:url(../images/s-icons.png) no-repeat -241px -83px;display:block;}
+.main .por .pic .icon3 a{width:27px;height:27px;position:absolute;right:13px;bottom:145px;background:url(../images/s-icons.png) no-repeat -275px -83px;display:block;}
+
+.main .por .portf{height:14px;width:153px;background-color:#fff;position:absolute;top:-11px ;left:0px;padding-right:9px;}
+.main .por .pic-in{padding:14px; height:442px;width:247px;background-color:#eeeeee;float:left;margin-right:12px;position:relative;}
+.main .por .pic4{margin-right:0;}
+.main .por .pic-in h3{height:46px;font-size:16px;color:#1a232a;border-bottom:1px solid #e7e7e7;line-height:46px;margin-top:3px;}
+.main .por .pic-in p{font-size:13px;color:#9c9c9c;line-height:23px;margin-top:8px;}
+.main .por .pic-in .photo{height:310px;width:247px;}
+.main .por .pic-in .photo img{height:310px;width:247px;}
+.main .mail{height:188px;border-bottom:double 3px #dddddd;padding-top:56px;}
+.main .mail .mail-in{border-right:none;}
+.main .mail .mail-in .text{float:left;padding:35px 0 0 29px; }
+.main .mail .mail-in .text h3{line-height:30px;font-size:16px;color:#363636;}
+.main .mail .mail-in .text p{font-size:13px;color:#9e9e9c;line-height:30px;}
+.main .mail .mail-in .let{float:right;}
+.main .blog{height:525px;margin:0 auto;padding-top:42px;position:relative;}
+.main .blog .blog-l{width:775px;}
+.main .blog .blog-l .left{width:380px;float:left;}
+.main .blog .blog-l .pic{position:relative;width:340px;height:255px;}
+.main .blog .blog-l .l{height:41px;width:42px;background:url(../images/s-icons.png) no-repeat -242px -168px;position:absolute;right:45px;bottom:0;}
+.main .blog .blog-l .pho{background:url(../images/s-icons.png) no-repeat -242px -122px;}
+.main .blog .blog-l .r{height:40px;width:41px;background:url(../images/s-icons.png) no-repeat -291px -122px;position:absolute;right:1px;bottom:0;}
+.main .blog .text{width:135px;height:14px;position:absolute;left:0;top:-11px;background-color:#fff;}
+.blog-l .left h3{line-height:49px;height:49px;color:#1b2531;font-size:16px;border-bottom:1px #ccccca solid;width:326px;}
+.blog-l .left p{font-size:13px;color:#9d9d9e;line-height:23px;width:326px;border-bottom:1px #ccccca solid;padding:12px 0 9px 0;}
+.blog-l .left .more a{display:block;height:14px;width:103px;color:#0e0e0d;margin:35px 0 0 13px;}
+.blog-l .left .more h4{float:left;font-size:16px;margin-right:7px;}
+.blog-l .left .more .jian{height:12px;width:13px;float:right;background:url(../images/s-icons.png) no-repeat -295px -183px ;margin-top:2px;}
+.main .blog-r .text{position:absolute;left:0;top:-54px;padding:0 6px;}
+.main .blog .blog-r{width:365px;float:right;position:relative;}
+.main .blog .blog-r .bot{margin-top:17px;}
+.main .blog .blog-r .top-t{height:109px;}
+.blog-r .pic img{float:left;}
+.main .blog .blog-r .text-r{height:109px;width:263px;float:left;padding-left:15px;}
+.blog-r .top h3{line-height:24px;height:24px;font-size:17px;}
+.blog-r .top .h6{line-height:23px;height:23px;margin-bottom:6px}
+.blog-r .text-r h4,.blog-r .text-r h5{line-height:23px;font-size:14px;font-weight:normal;color:#010101;}
+.blog-r .text-r h5{color:#f26b67;}
+.blog-r .top p{font-size:12px;color:#acacac;height:60px;line-height:20px;margin-top:6px;}

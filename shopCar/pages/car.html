@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>京东商城</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+<script src="../js/jquery-3.1.0.js"></script>
+<script>
+/*    $(function () {
+        $('.del').on('click',function () {
+
+          $(this).parent().parent().hide()
+        })
+    })*/
+</script>
+<style>
+	.main2{background: #fff;}
+    .in_main2 .top{height:47px;}
+    .in_main2 .top h3{float: left;margin-top:20px;height:27px;margin-right:31px;}
+    .in_main2 .top p{float: right;line-height:47px;height:47px;font-size:14px;}
+    .in_main2 .mid_top{height:42px;background: #f3f3f3;border:1px solid #e9e9e9;}
+    .in_main2 .mid_top dd{float:left;line-height:41px;font-size:14px;}
+    .in_main2 .mid_top .top01{margin-right:76px;}
+    .in_main2 .mid_top .top02{margin-right:461px;}
+    .in_main2 .mid_top .top03{margin-right:67px;}
+    .in_main2 .mid_top .top04{margin-right:103px;}
+    .in_main2 .mid_top .top05{margin-right:150px;}
+    .in_main2 .mid_top .top01 input{margin:15px 8px 13px 11px;}
+    .in_main2 .mid_mid .left{float:left;}
+    .in_main2 .mid_mid .right{float:right;font-size:14px;height:29px;line-height:29px;}
+    .in_main2 .mid_mid{height:29px;padding-top:11px;}
+    .in_main2 .mid_mid input{margin:9px 8px 7px 12px;}
+    .in_main2 .mid_mid .right p{float:left;}
+    .in_main2 .mid_mid .right span{margin-left:10px;}
+    .in_main2 .mid_bot{height:103px;border-top:2px solid #b2a89f;border-right:2px solid #f6f3ec;border-left:2px solid #f6f3ec;
+    border-bottom:1px solid #f6f3ec;padding-top:15px;position:relative;}
+    .in_main2 .mid_bot div{float:left;}
+    .in_main2 .mid_bot input{float:left;margin:5px 17px 9px 9px;}
+    .in_main2 .mid_bot img{height:80px;width:80px;border:1px solid #efebe8;float:left;}
+    .in_main2 .mid_bot .p_right{padding-left:10px;}
+    .in_main2 .mid_bot .p_right p{line-height:21px;width:203px;font-size:14px;position:relative;}
+    .in_main2 .mid_bot .p_right p span{color:#706b67;position:absolute;right:-130px;top:0;}
+    .in_main2 .mid_bot .price{position:absolute;left:600px;top:20px;}
+    .in_main2 .mid_bot .quantity{position:absolute;left:720px;top:20px;}
+    .in_main2 .mid_bot .quantity a{display: block}
+    .in_main2 .mid_bot .all_price{position:absolute;left:840px;top:20px;}
+    .in_main2 .mid_bot .last{position:absolute;left:1030px;top:20px;font-size:14px;}
+    #num{height:20px;width:44px;border:1px solid #cecece;display:inline-block;text-align: center;
+    position:relative;}
+    #deplus{height:20px;width:16px;border:1px solid #cecece;border-right:none;display:inline-block;
+    position:absolute;left:-17px;top:0;text-align: center}
+    #plus{height:20px;width:16px;border:1px solid #cecece;border-left:none;display:inline-block;
+        position:absolute;left:46px;top:0;text-align: center}
+    .in_main2 .bot ul{background: #f3f3f3;height:42px;display:inline-block;width:100%;margin-top:20px;border-radius: 4px;}
+    .in_main2 .bot li{float:left;line-height:42px;}
+    .in_main2 .bot .one{float:left;margin-right:700px;padding-left:10px;}
+    .in_main2 .bot .three{float:right;margin-right:280px;}
+
+
+</style>
+<body>
+<div class="main2">
+    <div class="inner">
+      <div class="in_main2">
+          <div class="top">
+              <h3>全部商品1</h3>
+              <h3>京东大药房</h3>
+              <span></span>
+              <p>配送至：
+                <select>
+                    <option value="">北京三环以内</option>
+                </select>
+              </p>
+          </div>
+          <div class="mid">
+              <div class="mid_top">
+                  <dl>
+                      <dd class="top01"><label><input type="checkbox" >全选</label></dd>
+                      <dd class="top02">商品</dd>
+                      <dd class="top03">单价</dd>
+                      <dd class="top04">数量</dd>
+                      <dd class="top05">小计</dd>
+                      <dd class="top06">操作</dd>
+                  </dl>
+              </div>
+              <div class="mid_mid">
+                  <div class="left">
+                      <input type="checkbox">
+                      <a href="javaScript:">京东自营</a>
+                  </div>
+                 <div class="right">
+                     <p>满¥99免运费(10kg内)</p>
+                     <span>已免运费</span>
+                 </div>
+
+              </div>
+              <div class="mid_bot" ng-repeat="item in cart" id="box">
+                  <input type="checkbox">
+                  <div class="product">
+                      <img ng-src="images/2-328x300.jpg">
+                      <div class="p_right">
+                          <p>{{item.product.name}} <span>颜色：京东金条100g</span></p>
+                          <p>购买礼品服务</p>
+                      </div>
+                  </div>
+                  <div class="price">
+                     {{item.product.price|currency:'¥'}}
+                  </div>
+                  <div class="quantity">
+                      <span id="deplus"><a href="javascript:" >-</a></span>
+                      <span id="num">{{item.product.quantity}}</span>
+                      <span id="plus"><a href="javascript:" >+</a></span>
+                  </div>
+                  <div class="all_price">
+                      <span>{{item.product.price*item.product.quantity|currency:'¥'}}</span>
+                  </div>
+                  <div class="last">
+                      <a href="javaScript:" class="del" ng-click="del(item.product.name)">删除</a><br/>
+                      <a href="javaScript:">移到我的关注</a>
+                  </div>
+              </div>
+          </div>
+          <div class="bot">
+			<ul>
+                <li class="one">总计</li>
+                <li class="two">{{count()}}个</li>
+                <li class="three">{{countPrice()|currency:'¥'}}</li>
+            </ul>
+          </div>
+
+      </div>
+    </div>
+</div>
+</body>
+</html>

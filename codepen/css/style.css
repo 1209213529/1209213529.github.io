@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,h7,p,textarea,input,option,dt,dd,dl,ul,li,ol{margin:0;padding:0;}
+img,input{border:none;}
+a{text-decoration:none;}
+ul{list-style:none;}
+body{font-family:arial,"微软雅黑"}
+.clear{clear:both;}
+::selection{background:pink;}
+@keyframes donghua{
+		0%{text-shadow:0 0 0 rgba(0,0,0,0);}
+		50%{text-shadow:0 0 10px rgba(255,255,255,.5),0 0 10px rgba(255,255,255,.5),0 0 10px rgba(255,255,255,.5),0 0 10px rgba(255,255,255,.5),0 0 10px rgba(255,255,255,.5);}
+		100%{text-shadow:0 0 0 rgba(0,0,0,0);}
+	}
+.inner{width:1000px;margin:0 auto;}
+header{height:110px;background:#e5e5e5;}
+header .logo{float:left;}
+header .logo .fa-codepen{padding-right:23px;}
+header .logo a{line-height:110px;font-size:35px;color:#4486a0;}
+header .menu{float:right;padding-top:37px;font-size:12px;}
+.one .cloud .fa-cloud{color:#fff;font-size:70px;animation:donghua 4s infinite ease; cursor:alias;}
+.one{text-align:center;padding:100px 0;background:-webkit-linear-gradient(56deg, #8cbe75 ,#4fa59a, #4468be);
+									background:-moz-linear-gradient(56deg, #8cbe75 , #4fa59a, #4468be);
+									background:-ms-linear-gradient(56deg, #8cbe75 , #4fa59a,#4468be);
+									background:-o-linear-gradient(56deg, #8cbe75 , #4fa59a,#4468be);
+									background:linear-gradient(56deg, #8cbe75 , #4fa59a,#4468be);}
+.one h1{color:#fff;font-size:33px;font-weight:normal;line-height:60px;}
+.one h1 a{color:#fff;width:168px;border-bottom:1px #fff dotted;position:relative;}
+.one h1 a:before{content:'';width:100%;border-top:1px #fff dotted;position:absolute;left:0;top:100%;opacity:0;transition:all 0.5s;}
+.one h1 a:hover:before{top:0;opacity:1;}
+.one p{color:#dce4e6;line-height:40px;padding-top:15px;font-size:20px;}
+.one .btn{padding-top:34px;}
+.one .btn a{display:inline-block;height:50px;width:175px;border:1px #fff solid;line-height:50px;color:#fff;font-size:20px;border-radius:4px;position:relative;transition:all 1s ease;}
+.one .btn a:hover{padding:0 20px;width:230px;background:rgba(255,255,255,.5);}
+.one .btn a:after{content:"";width:1px;height:100px;background:#fff;position:absolute;right:50%;top:51px;}
+
+.two{background:#eaf9fe;}
+.two .inner .left{width:500px;float:left;padding-top:100px;}
+.two .inner .left li{display:inline-block;margin:40px;transform:rotate(45deg);border:1px solid #6795a4;width:140px;height:140px;transition:all 0.6s;}
+.two .inner .left li a{float:left;display:inline-block;width:140px;height:140px;text-align:center;line-height:140px;font-size:60px;transform:rotate(-45deg);transition:all 0.8s;}
+.two .inner .left li:hover{background:#15B6DF;}
+.two .inner .left li:nth-child(1) a{color:#c4ea93;}
+.two .inner .left li:nth-child(1):hover a{transform:rotate(-45deg)  scale(1.8);}
+.two .inner .left li:nth-child(2) a{color:#8adda9;}
+.two .inner .left li:nth-child(2):hover a{transform:rotate(315deg);}
+.two .inner .left li:nth-child(3) a{color:#6ad6c9;}
+.two .inner .left li:nth-child(3):hover a{transform:rotate(-45deg) skew(45deg,0);}
+
+.two .inner .left li:nth-child(4) a{color:#58add2;}
+.two .inner .left li:nth-child(4):hover a{transform:rotate(180deg) scale(1.5);}
+
+.two .inner .left li:nth-child(5) a{color:#4a88d3;}
+.two .inner .left li:nth-child(5):hover a{transform:rotate(-45deg) scale(0.8);}
+
+.two .inner .left li:nth-child(6) a{color:#6b88e6;}
+.two .inner .left li:nth-child(6):hover a{transform:rotate(-45deg) translateY(-20px);}
+.two .inner .left li a:hover{color:#fff;text-shadow:0 0 10px rgba(255,255,255,.5),0 0 10px rgba(255,255,255,.5);}
+
+
+.two .inner .right{float:left;width:500px;padding-top:104px;padding-bottom:128px;}
+.two .right h3{line-height:51px;font-size:30px;color:#41859a;position:relative;}
+.two .right h3:before{content:"";height:1px;width:160px;background:#41859c;position:absolute;left:0;bottom:-27px;}
+.two .right p{line-height:32px;padding-top:30px;font-size:14px;}
+.two .right .p1{padding-top:59px;}
+
+
+footer{text-align:center;background:-webkit-linear-gradient(56deg, #8cbe75 ,#4fa59a, #4468be);
+									background:-moz-linear-gradient(56deg, #8cbe75 , #4fa59a, #4468be);
+									background:-ms-linear-gradient(56deg, #8cbe75 , #4fa59a,#4468be);
+									background:-o-linear-gradient(56deg, #8cbe75 , #4fa59a,#4468be);
+									background:linear-gradient(56deg, #8cbe75 , #4fa59a,#4468be);
+color:#fff;height:50px;line-height:50px;}
